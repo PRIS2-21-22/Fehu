@@ -5,7 +5,7 @@ from line import Line
 
 class Polygon(object):
 
-    def __init__(self, puntos=[]):
+    def __init__(self, puntos=list()):
         self._puntos = puntos
 
     def concavo(self):
@@ -33,16 +33,16 @@ class Polygon(object):
         mod = self._puntos
         i = 0
         for i in self._puntos:
-            A += self._puntos.get(i).getPosX() * self._puntos.get((i + 1)%mod).getPosY() - self._puntos((i + 1)%mod).getPosX()*self._puntos.get(i).getPosY()
+            A =+ self._puntos.get(i).getPosX() * self._puntos.get((i + 1)%mod).getPosY() - self._puntos((i + 1)%mod).getPosX()*self._puntos.get(i).getPosY()
 
         A = A/2
 
         for i in self._puntos:
-            X += self._puntos.get(i).getPosX() + self._puntos.get((i + 1)%mod).getPosX() * self._puntos(i).getPosX() * self._puntos((i + 1)%mod).getPosY() - self._puntos((i + 1)%mod).getPosX() * self._puntos.get(i).getPosY()
+            X =+ self._puntos.get(i).getPosX() + self._puntos.get((i + 1)%mod).getPosX() * self._puntos(i).getPosX() * self._puntos((i + 1)%mod).getPosY() - self._puntos((i + 1)%mod).getPosX() * self._puntos.get(i).getPosY()
         X = X/(6*A)
 
         for i in self._puntos:
-            Y += self._puntos.get(i).getPosY() + self._puntos.get((i + 1)%mod).getPosY() * self._puntos(i).getPosX() * self._puntos((i + 1)%mod).getPosY() - self._puntos((i + 1)%mod).getPosX() * self._puntos.get(i).getPosY()
+            Y =+ self._puntos.get(i).getPosY() + self._puntos.get((i + 1)%mod).getPosY() * self._puntos(i).getPosX() * self._puntos((i + 1)%mod).getPosY() - self._puntos((i + 1)%mod).getPosX() * self._puntos.get(i).getPosY()
         Y = Y/(6*A)
 
         return Point(X, Y)

@@ -17,6 +17,6 @@ class Point(object):
         self._y = y
 
     def toString(self):
-        return "(" + str(self.getPosX()) + ", " + str(self.getPosY()) + ")"
+        return "(" , str(self.getPosX()) , ", " + str(self.getPosY()) , ")"
 
 
