@@ -46,3 +46,6 @@ class Polygon(object):
         Y = Y/(6*A)
 
         return Point(X, Y)
+
+    def to_string(self):
+        return str(self._puntos)
