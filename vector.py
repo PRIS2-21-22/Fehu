@@ -1,7 +1,7 @@
 from point import Point
 import math 
 class Vector(object):
-    def __init__(self, point1, point2):
+    def __init__(self, point1 = Point, point2 = Point):
         self._punto1 = point1
         self._punto2 = point2
 
