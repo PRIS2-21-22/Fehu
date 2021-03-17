@@ -15,6 +15,6 @@ def getPosY(self):
 
 def setPosY(self, y):
     self._y = y
-    
+
 def toString(self):
-    return "(" + self.getPosX() + ", " + self.getPosY() + ")"
+    return "(" + getPosX(self) + ", " + getPosY(self) + ")"
