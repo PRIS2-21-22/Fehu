@@ -18,7 +18,7 @@ class Vector(object):
         return self.coordenadaX()*vector.coordenadaY() - self.coordenadaY() * vector.coordenadaX
 
     def to_string(self):
-        return "y="+( str(self._punto2.getPosX()) - str(self._punto1.getPosX()) )+"x+"+( str(self._punto2.getPosY()) - str(self._punto1.getPosY()) )
+        return "y="+ str(self._punto2.getPosX() - self._punto1.getPosX()) + "x+" + str( self._punto2.getPosY() - self._punto1.getPosY() )
 
 
     
