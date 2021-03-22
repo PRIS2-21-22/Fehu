@@ -1,6 +1,6 @@
 
 from polygon import Polygon
-from vector import Vector
+from vector import VectorClass
 from point import Point
 from line import Line
 
@@ -14,9 +14,9 @@ class UsePolygon:
         puntoF = Point(8, 10)
         puntoP = Point(5, 5)
 
-        vector1 = Vector(puntoA, puntoB)
-        vector2 = Vector(puntoB, puntoC)
-        listapuntos = list()
+        vector1 = VectorClass(puntoA, puntoB)
+        vector2 = VectorClass(puntoB, puntoC)
+        listapuntos = []
         listapuntos.append(puntoA)
         listapuntos.append(puntoB)
         listapuntos.append(puntoC)
@@ -26,7 +26,7 @@ class UsePolygon:
         listapuntos.append(puntoP)
         poligono = Polygon(listapuntos)
 
-        listapuntos = list()
+        listapuntos = []
         listapuntos.append(puntoA)
         listapuntos.append(puntoC)
         listapuntos.append(puntoD)
@@ -42,7 +42,7 @@ class UsePolygon:
         print(vector2.to_string())
         print(poligono.concavo())
         print(poligono2.concavo())
-        print(poligono.centroide())
+        print(poligono.centroide().toString())
         print(poligono.concavo())    
         print(ln.to_string())  
         print(ln2.to_string())  
