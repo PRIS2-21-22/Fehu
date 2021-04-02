@@ -24,8 +24,8 @@ class Polygon(object):
                 return True
         
         vec1 = VectorClass(self._puntos[i + 1], self._puntos[0])
-        prodVectorial = vec2.producto_vectorial(vec1)
-        if positivo != (prodVectorial >= 0):
+        prod_vectorial = vec2.producto_vectorial(vec1)
+        if positivo != (prod_vectorial >= 0):
                 return True
         return False
 
