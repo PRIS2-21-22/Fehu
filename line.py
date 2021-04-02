@@ -3,7 +3,7 @@ from point import Point
 class Line(object):
     def __init__(self, pendiente, point = Point):
         self._x = pendiente
-        self._n = -pendiente + point.getPosX() + point.getPosY()
+        self._n = -pendiente + point._x + point._y
 
     def to_string(self):
         return "y = "  + str(self._x) + "x + ("  + str(self._n) + ")"
@@ -14,6 +14,6 @@ class Line(object):
     def punto_corte(self, otra):
             if (self._x == otra._x):
                 return "paralelas o coincidentes"
-            coordenadaX = (self._n-otra._n)/(self._x-otra._x)*(-1)
-            coordenadaY = self._x*coordenadaX + self._n
-            return "(" + str(coordenadaX) + ", " + str(coordenadaY) + ")"
+            coordenada_x = (self._n-otra._n)/(self._x-otra._x)*(-1)
+            coordenada_y = self._x*coordenada_x + self._n
+            return "(" + str(coordenada_x) + ", " + str(coordenada_y) + ")"
