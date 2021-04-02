@@ -10,8 +10,8 @@ class Polygon(object):
         i = 0
         vec1 = VectorClass(self._puntos[i], self._puntos[i + 1])
         vec2 = VectorClass(self._puntos[i + 1], self._puntos[i + 2])
-        prodVectorial = vec1.producto_vectorial(vec2)
-        positivo = prodVectorial >= 0
+        prod_vectorial = vec1.producto_vectorial(vec2)
+        positivo = prod_vectorial >= 0
 
         mod = len(self._puntos)
         i = 1
