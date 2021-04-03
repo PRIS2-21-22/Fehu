@@ -1,6 +1,6 @@
-### Mejora del producto software. Refactoring
+## Mejora del producto software. Refactoring
 
-#Code Review.
+###Code Review.
 In this section, we be explain the steps to make a code review.
 In the first place, we are going to use two tools.
 SonarCloud and Codacy.
