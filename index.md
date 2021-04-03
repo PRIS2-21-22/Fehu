@@ -1,4 +1,4 @@
-## Mejora del producto software. Refactoring
+### Mejora del producto software. Refactoring
 
 #Code Review.
 In this section, we be explain the steps to make a code review.
@@ -39,7 +39,7 @@ Another way of comunicate anything, could be with the tool, here there is an exa
 
 In the case of Codacy, the easiest way of share the issues is by using the comments as we have seen before.
 
-#Refactoring.
+###Refactoring.
 
 When our partner is done with the code review, it is the moment to refactor, in my case, i had to do a few changes. Most of then, relate with names and also fix a few bugs.
 Once the refactor is done, it is time to make a new version, v2.0. 
